@@ -1,0 +1,116 @@
+#slideSpace{
+    border-radius: 1em;
+    margin-right: 1em;
+    height: 750px;
+    width: 400px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1c1c;
+    padding: 1.5em;
+    border-radius: 3em 1em 3em 1em;
+    margin-top: 0.5EM;
+    animation: slide 9s ease-in-out infinite;
+    animation-delay: calc(3s * var(--delay));
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #363636;
+}
+
+.card:hover .title{
+    letter-spacing: 0.2em;
+}
+
+.title{
+    font-weight: bold;
+    color: #deacf5;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+    transition: letter-spacing linear 1s;
+}
+
+.img{
+    position: relative;
+}
+
+.img img{
+    width: 270px;
+    object-fit: cover;
+    border-radius: 0.2em;
+}
+
+.layer2{
+    position: absolute;
+    opacity: 0;
+    height: 11em;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    gap: 1em;
+    transition: all 300ms linear;
+    color:#deacf5;
+    transform: translateY(-10em);
+}
+
+.layer2:hover{
+    opacity: 1;
+}
+
+.layer2 svg{
+    font-size: 3em;
+    transition: all 300ms linear;
+}
+
+.layer2 svg:hover{
+    font-size: 4em;
+}
+
+@keyframes slide{
+    10%{
+        opacity: 0;
+        scale: 0;
+        transform: translateY(-550%)
+        
+    }
+
+    30%{
+        opacity: 0.2;
+    }
+
+    45%,55%{
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0%);
+        pointer-events: all;
+    }
+
+    90%{
+        opacity: 0;
+        scale: 0.2;
+        transform: translateY(550%)
+    }
+}

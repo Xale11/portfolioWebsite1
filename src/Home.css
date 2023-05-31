@@ -1,0 +1,158 @@
+#home{
+    background: linear-gradient(#28104E, #212121);
+    height: calc(100vh - 5em);
+    display: grid;
+    grid-template-areas:
+    "pr sli"
+    "des sli"
+    "li sli";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.home{
+    background: linear-gradient(#28104E, #212121);
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    align-items: flex-start;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#profile{
+    grid-area: pr;
+    font-size: 5em;
+    color: #deacf5;
+    transform: translateY(1em);
+}
+
+.profile{
+    font-size: 5em;
+    color: #deacf5;
+}
+
+#slideshow{
+    grid-area: sli;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc{
+    grid-area: des;
+    color: #deacf5;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin-left: 7px;
+    padding-top: 0em;
+}
+
+.desc{
+    font-size: 2em;
+    color: #deacf5;
+    margin-left: 0.2em;
+}
+
+.desc p{
+    margin-top: 0.2em;
+}
+
+#desc p{
+    margin-top: 0.5em;
+}
+
+#links{
+    grid-area: li;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 0.25em;
+}
+
+#resume{
+    font-weight: bold;
+    font-size: 2em;
+    color: #deacf5;
+    justify-self: center;
+    align-self: center;
+    padding: 0.1em 0.2em 0.2em 0.2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.1em;
+    transition: background-color 500ms ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#resume:hover{
+    background-color: #6237a0;
+}
+
+.homeDropdown{
+    font-size: 3em;
+    margin: 0.5em 1em 0 1em;
+    color: #deacf5;
+    padding: 0.2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.1em;
+    transition: background-color 500ms ease;
+    cursor: pointer;
+}
+
+.homeDropdown:hover{
+    background-color: #6237a0;
+}
+
+#dropdownLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdownLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.email{
+    background-color: #6237a0;
+    height: 1.7em;
+    width: 12em;
+    z-index: 3;
+    text-align: center;
+    border-radius: 0.5em;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.homeDropdown:hover~.email{
+    opacity: 1;
+}
+
+.email p{
+    display: hidden;
+    transform: translateY(-300%);
+    transition: all 500ms ease;
+}
+
+.homeDropdown:hover~.email p{
+    display: inline;
+    transform: translateY(0%);
+}

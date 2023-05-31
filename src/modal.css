@@ -1,0 +1,13 @@
+.modal{
+    position: fixed;
+    top: 4.5em;
+    color: #191919;
+    background-color: #deacf5;
+    width: 10em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    z-index: 10000;
+}
