@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons"
-import {faAt} from "@fortawesome/free-solid-svg-icons"
+import {AiOutlineGithub} from "react-icons/ai"
+import {BsLinkedin} from "react-icons/bs"
+import {MdOutlineAlternateEmail} from "react-icons/md"
 import Slideshow from "./Slideshow.js"
 import "./Home.css"
 import { useStateContext } from './context/context.js'
@@ -37,14 +37,14 @@ const Home = () => {
             <a href="https://docs.google.com/document/d/1dkSTHttWg0RAdJYutbO9n-B8SIA9_tSkJOOiehKcoUQ/edit?usp=sharing" target="_blank" id="resume">Resume</a>
             <div id="dropdownLinks">
               <a href="https://uk.linkedin.com/in/alex-diyan-325200202" target="_blank" className="dropdownLink">
-                <FontAwesomeIcon icon={faLinkedin} className="homeDropdown"/>
+                <BsLinkedin className="homeDropdown"/>
               </a>
               <span href="" onClick={() => {navigator.clipboard.writeText("alexdiyan@outlook.com"); showPopup()}} className="dropdownLink">
-                <FontAwesomeIcon icon={faAt} className="homeDropdown"/>
+                <MdOutlineAlternateEmail className="homeDropdown"/>
                 <Email></Email>
               </span>
               <a href="https://github.com/Xale11" target='_blank' className="dropdownLink">
-                <FontAwesomeIcon icon={faGithub} className="homeDropdown"/>
+                <AiOutlineGithub className="homeDropdown"/>
               </a>
             </div>
         </div>            

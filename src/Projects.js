@@ -1,8 +1,7 @@
 import React, { useEffect, useRef }from 'react'
 import ProjectCard from './ProjectCard'
 import "./Projects.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faChevronDown, faChevronUp} from "@fortawesome/free-solid-svg-icons"
+import {BsChevronDown, BsChevronUp} from "react-icons/bs"
 import amazonRobot from "./img/amazonRobot.jpg"
 import teslaBot from "./img/teslaBot.jpg"
 import bostonRobot from "./img/bostonDyna.jpg"
@@ -59,7 +58,7 @@ useEffect(() => {
       </div>
       <div id="projectsButton">
         <div className="projectSvg">
-          <FontAwesomeIcon onClick={()=>{scrollProject(-300)}} icon={faChevronUp}></FontAwesomeIcon> <FontAwesomeIcon onClick={()=>{scrollProject(300)}} icon={faChevronDown} ></FontAwesomeIcon>
+          <BsChevronUp onClick={()=>{scrollProject(-300)}}/> <BsChevronDown onClick={()=>{scrollProject(300)}}/>
         </div>
         <Link to="/projectlist" className="projectLink">
           View More
