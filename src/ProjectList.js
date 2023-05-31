@@ -30,7 +30,7 @@ const ProjectSlide = ({img, title, date, desc, liveLink, gitHub}) => {
             <div className="slideMain">
                 <div className="slideImg">
                     <img src={require(`${img}`)} alt="Not Available" />
-                    <div className="layer"><BiCodeAlt onClick={() => {window.open(slide.liveLink)}}/><BsGithub onClick={() => {window.open(slide.gitHub)}}/></div>
+                    <div className="layer"><BiCodeAlt onClick={() => {window.open(liveLink)}}/><BsGithub onClick={() => {window.open(gitHub)}}/></div>
                     <div className="slideDate">{date}</div>
                 </div>
                 <div className="slideDets">
