@@ -98,3 +98,20 @@
 .layer svg:hover{
     font-size: 4em;
 }
+
+@media (max-width: 480px){
+    .slideMain{
+        flex-direction: column-reverse;
+    }
+    .slideDesc{
+        display: none;
+    }
+
+    .slideImg img{
+        width: 90%;
+    }
+    .slideTitle{
+        text-align: center;
+        font-size: 5vw ;
+    }
+}

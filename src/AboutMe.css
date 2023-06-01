@@ -32,3 +32,13 @@
     margin-bottom: 2em;
     font-family: 'PT Sans', sans-serif;
 }
+
+@media (max-width: 480px){
+    .aboutme{
+        width: 100vw;
+    }
+    .aboutmeDesc{
+        width: 90vw;
+        padding: 3vw;
+    }
+}
