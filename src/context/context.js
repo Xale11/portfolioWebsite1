@@ -51,7 +51,7 @@ const Context = ({children}) => {
         desc:"This was the functional web application that I created. I used HTML, CSS and JavaScript. The HTML and CSS behind this project were very simple, the main aim of this project was to use JavaScript and event listeners to make the functional web app. This was a big jump in my web development journey.",
         date: "06/06/22",
         gitHub: "https://github.com/Xale11/theApp",
-        liveLink: "https://vercel.com/xale11/stopwatch-app",
+        liveLink: "https://stopwatch-app-nu.vercel.app/",
       },
       {
         img: "./img/lineRobot.jpg",
