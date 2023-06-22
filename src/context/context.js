@@ -5,6 +5,14 @@ const ContextAPI = createContext()
 const Context = ({children}) => {
 
     const projectData = [
+      {
+        img: "./img/openChat.png",
+        title:"Instant Messaging Platform - Openchat",
+        desc:"This is an instant messaging platform built using React for the frontend and Firebase for backend. I utilised Firebase create a user authentication page and store messages between contacts. These messages are uploaded in a way that only allows members in a chatroom to see and send messages in the chatroom. To create an account, you need an email and password, or you can sign up through google. The account and the account data in then stored and protected in the firebase database. The webapp has been optimized for laptop and mobile devices. Using MidJourney AI I generated the image used on the login/authentication page. I used ContextAPI and react router for state management and page traversal.",
+        date: "22/06/23",
+        gitHub: "https://github.com/Xale11/openchat",
+        liveLink: "https://openchat-omega.vercel.app/",
+      },
         {
         img: "./img/watMovi.png",
         title:"Movie Streaming Site - watMovi",
@@ -82,20 +90,20 @@ const Context = ({children}) => {
 
   const slideShowData = [
     {
+      img: "./img/openChat.png",
+      title:"Instant Messaging Platform - Openchat",
+      desc:"This is an instant messaging platform built using React for the frontend and Firebase for backend. I utilised Firebase create a user authentication page and store messages between contacts. These messages are uploaded in a way that only allows members in a chatroom to see and send messages in the chatroom. To create an account, you need an email and password, or you can sign up through google. The account and the account data in then stored and protected in the firebase database. The webapp has been optimized for laptop and mobile devices. Using MidJourney AI I generated the image used on the login/authentication page. I used ContextAPI and react router for state management and page traversal.",
+      date: "22/06/23",
+      gitHub: "https://github.com/Xale11/openchat",
+      liveLink: "https://openchat-omega.vercel.app/",
+    },
+    {
       img: "./img/watMovi.png",
       title:"Movie Streaming Site - watMovi",
       desc:"This is another big React project which uses the TMDb API to fetch data on movies. I used multiple React hooks and ContextAPI to manage the state between the multiple React components. The website's homepage shows the top 10 trending movies in real-time which is presented on a slideshow that shows each movie cover on a slide card. As you scroll down, you will see popular movies for each genre of movie. There is also a search bar where you search for a specific movie you. When searching for specific movies, recommended and relevant movies will also be shown in the search. Once I completed this project I had a very strong grasp of React and felt very comfortable with the front end of web development. It was clear to me that my next project would focus on the backend.",
       date: "24/05/23",
       gitHub: "https://github.com/Xale11/watmovi",
       liveLink: "https://watmovi.vercel.app/",
-    },
-    {
-      img: "./img/weatherApp.png",
-      title:"Weather App",
-      desc:"This is another React project which used APIs to fetch data on the weather and times in different parts of the world. You use the search bar to type in the city or country of your choice and a function will be triggered which fetches data using the API based on your searched request. I completed this project to further improve my utilisation of React hooks and understand how to use APIs in React better as I faced challenges using APIs in my last React project.",
-      date: "12/05/23",
-      gitHub: "https://github.com/Xale11/weatherapi",
-      liveLink: "https://weatherapi-rho.vercel.app/",
     },
     {
       img: "./img/ecommerceSite.png",
